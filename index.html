@@ -5,17 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Social Media</title>
-
   <link rel="stylesheet" href="style.css">
-
   <!-- import: TAILWIND CSS -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
   <!-- import: GOOGLE FONTS -->
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:wght@600;700;800&amp;display=swap"
     rel="stylesheet">
-
     <!-- import: LUCIDE ICONS - Lib de icones vetoriais -->
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
  
@@ -23,44 +19,57 @@
 </head>
 
 <body data-template-id="__page-root" class="w-full min-h-screen" style="background: rgb(245, 243, 255);">
-  <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b"
-    style="background:rgba(245,243,255,0.95); border-color: rgba(107,33,168,0.15);">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="#hero">
-        <span data-template-id="nav-logo" class="canva-text font-display font-bold text-xl" style="color: rgb(107, 33, 168); font-weight: 700; font-style: normal; font-size: 16px;">Portfólio</span>
-    </a>
-      <div class="hidden md:flex gap-6 text-sm font-medium" style="color: var(--text-dark);">
-        <a href="#hero">Início</a><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a
-          href="#resultados">Resultados</a><a href="#videos">Reels</a><a href="#stories">Stories</a><a
-          href="#landing-pages">Landing Pages</a><a href="#design">Design</a><a href="#contato">Contato</a>
-      </div>
-    </div>
-  </nav>
-  <section id="hero" class="pt-28 pb-16 px-6"
-    style="background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 50%, #FAF5FF 100%);">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-      <div class="flex-1 fade-in">
-        <p data-template-id="hero-greeting" class="canva-text text-lg font-medium"
-          style="color: rgb(217, 70, 239); font-weight: 500; font-style: normal; font-size: 16px;">Portfólio
-          Profissional</p>
-        <h1 data-template-id="hero-name" class="canva-text font-display font-bold mt-2"
-          style="color: rgb(59, 7, 100); font-weight: 700; font-style: normal; font-size: 48px;">Keila Campos</h1>
-        <p data-template-id="hero-tagline" class="canva-text mt-4 text-lg leading-relaxed"
-          style="color: rgb(76, 29, 149); font-weight: 400; font-style: normal; font-size: 16px;">Marketing Digital •
-          Social Media • Produção de Conteúdo</p><a href="#contato" data-template-id="hero-cta"
-          class="canva-button inline-block mt-8 px-8 py-3 rounded-full font-semibold text-white shadow-lg"
-          style="box-shadow: rgba(217, 70, 239, 0.3) 0px 4px 24px; background: linear-gradient(135deg, rgb(124, 58, 237), rgb(217, 70, 239)); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Vamos
-          conversar</a>
-      </div>
-      <div class="flex-1 fade-in relative flex items-center justify-center">
-        <div class="absolute -inset-12 rounded-full opacity-20"
-          style="background: radial-gradient(circle, rgba(217,70,239,0.3), transparent 70%);"></div><img
-          data-template-id="hero-photo" class="canva-image relative w-full md:w-96 md:h-96 object-cover rounded-[2rem]"
-          style="border: 3px solid rgba(107,33,168,0.2);" loading="lazy" src="canva://MAHMp0iSTz0/1"
-          alt="Pretty female with brown curly hair holding camera and standing under bright sunlight while looking at camera">
-      </div>
-    </div>
-  </section>
+    <!-- NAVBAR - MENU DE NAVEGACAO -->
+  <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b" style="background:rgba(245,243,255,0.95); border-color: rgba(107,33,168,0.15);">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#hero">
+                <span data-template-id="nav-logo" class="canva-text font-display font-bold text-xl" style="color: rgb(107, 33, 168); font-weight: 700; font-style: normal; font-size: 16px;">Portfólio</span>
+            </a>
+
+            <div class="hidden md:flex gap-6 text-sm font-medium" style="color: var(--text-dark);">
+                <a href="#hero">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#videos">Reels</a>
+                <a href="#stories">Stories</a>
+                <a href="#landing-pages">Landing Pages</a>
+                <a href="#design">Design</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Secao de INICIO -->
+    <section id="hero" class="pt-28 pb-16 px-6" style="background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 50%, #FAF5FF 100%);">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 fade-in">
+                <p data-template-id="hero-greeting" class="canva-text text-lg font-medium" style="color: rgb(217, 70, 239); font-weight: 500; font-style: normal; font-size: 16px;">
+                    Portfólio Profissional
+                </p>
+                
+                <h1 data-template-id="hero-name" class="canva-text font-display font-bold mt-2" style="color: rgb(59, 7, 100); font-weight: 700; font-style: normal; font-size: 48px;">
+                    Keila Campos
+                </h1>
+
+                <p data-template-id="hero-tagline" class="canva-text mt-4 text-lg leading-relaxed" style="color: rgb(76, 29, 149); font-weight: 400; font-style: normal; font-size: 16px;">
+                    Marketing Digital • Social Media • Produção de Conteúdo
+                </p>
+                
+                <a href="#contato" data-template-id="hero-cta" class="canva-button inline-block mt-8 px-8 py-3 rounded-full font-semibold text-white shadow-lg" style="box-shadow: rgba(217, 70, 239, 0.3) 0px 4px 24px; background: linear-gradient(135deg, rgb(124, 58, 237), rgb(217, 70, 239)); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">
+                    Vamos conversar
+                </a>
+            </div>
+            
+            <div class="flex-1 fade-in relative flex items-center justify-center">
+                <div class="absolute -inset-12 rounded-full opacity-20" style="background: radial-gradient(circle, rgba(217,70,239,0.3), transparent 70%);"></div>
+                
+                <img data-template-id="hero-photo" class="canva-image relative w-full md:w-96 md:h-96 object-cover rounded-[2rem]" style="border: 3px solid rgba(107,33,168,0.2);" loading="lazy" src="canva://MAHMp0iSTz0/1" alt="Pretty female with brown curly hair holding camera and standing under bright sunlight while looking at camera">
+            </div>
+        </div>
+    </section>
+
+  <!-- Secao SOBRE -->
   <section id="sobre" class="py-20 px-6" style="background: #FAFAFE;">
     <div class="max-w-6xl mx-auto fade-in">
       <h2 data-template-id="sobre-title" class="canva-text font-display font-bold text-center"
@@ -108,6 +117,8 @@
       </div>
     </div>
   </section>
+
+  <!-- secao de PROCESSO  -->
   <section id="processos" class="py-20 px-6" style="background: linear-gradient(135deg, #F5F3FF, #FAF5FF);">
     <div class="max-w-6xl mx-auto fade-in">
       <h2 data-template-id="processos-title" class="canva-text font-display font-bold text-center"
